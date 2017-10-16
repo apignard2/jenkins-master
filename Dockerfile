@@ -40,7 +40,7 @@ RUN echo deb http://archive.ubuntu.com/ubuntu precise universe > /etc/apt/source
 RUN apt-get update -qq && apt-get install -qqy wget curl git iptables apt-transport-https ca-certificates apparmor
 
 # for jenkins
-RUN wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add - \
+RUN wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | apt-key add - \
     && echo deb https://pkg.jenkins.io/debian binary/ > /etc/apt/sources.list.d/jenkins.list
 
 RUN apt-get update -qq && apt-get install -qqy jenkins
