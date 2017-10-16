@@ -1,5 +1,9 @@
 #!/bin/bash
 
+git config --global user.email "ci@rancher.com" \
+&& git config --global user.name "rancher_ci"
+
+
 # If we have docker bind mounted in - no need.
 if (docker version); then
 	echo "Docker is already bind mounted in - we are good to go..."
