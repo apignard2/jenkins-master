@@ -53,5 +53,5 @@ RUN curl -fsSLO https://get.docker.com/builds/Linux/x86_64/docker-latest.tgz \
 
 # add tools for cicd
 # rancher cli & cihelper
-ADD cihelper /usr/local/bin/cihelper
-ADD rancher /usr/local/bin/rancher
+#ADD cihelper /usr/local/bin/cihelper
+#ADD rancher /usr/local/bin/rancher
