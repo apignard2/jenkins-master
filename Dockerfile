@@ -11,6 +11,8 @@ ENV JENKINS_HOME /var/jenkins
 # set our user home to the same location
 ENV HOME /var/jenkins
 
+ENV DEBIAN_FRONTEND noninteractive
+
 # set our wrapper
 ENTRYPOINT ["/usr/local/bin/docker-wrapper"]
 # default command to launch jenkins
